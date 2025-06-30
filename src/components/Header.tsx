@@ -28,12 +28,15 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="relative">
-              <img 
-                src="/freepik__adjust__71860.png" 
-                alt="ZenAlpha Technologies Logo" 
-                className="w-10 h-10 object-contain"
-              />
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-400/30 to-blue-500/30 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+              <div className="relative bg-white/10 backdrop-blur-sm rounded-xl p-2 border border-white/20 group-hover:bg-white/15 transition-all duration-300">
+                <img 
+                  src="/freepik__adjust__71860.png" 
+                  alt="ZenAlpha Technologies Logo" 
+                  className="w-12 h-12 object-contain filter brightness-110 contrast-110"
+                />
+              </div>
             </div>
             <div>
               <h1 className="text-xl font-display font-bold gradient-text">ZenAlpha</h1>
